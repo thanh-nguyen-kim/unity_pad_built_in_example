@@ -10,16 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
-  m_Name: Default Local Group
+  m_Name: FastFollow Content
   m_EditorClassIdentifier: 
-  m_GroupName: Default Local Group
+  m_GroupName: FastFollow Content
   m_Data:
     m_SerializedData: []
-  m_GUID: cc6d5f65ac05d084baf158b1c62f6e28
-  m_SerializeEntries: []
+  m_GUID: 8c617aa2af96e4346bc025eb32c9f79b
+  m_SerializeEntries:
+  - m_GUID: 291c1b83805b2a4428c40520ed3bd27b
+    m_Address: Assets/Scenes/Scene2.unity
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scene2
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: b5c09aef320017846b8c82aaae72d986, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: 588877004cc7d2441b763c8789dfd3b8, type: 2}
-    - {fileID: 11400000, guid: 8466e1299cde41d488994009b15b681c, type: 2}
+    - {fileID: 11400000, guid: 1c982bf07e4def143862dd56055d6e4c, type: 2}
+    - {fileID: 11400000, guid: 76cd8fac97e13544c815670ed263abf3, type: 2}

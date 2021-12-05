@@ -6,8 +6,6 @@ An simple example project for Unity which explains basic concepts of Play Asset 
 + Check for Asset pack available.
 + Download Asset Pack from Play Asset Delivery.  
 
-Thank for the open source project <https://github.com/jelte/be.khepri.play.assetdelivery.addressables> which I use as a reference for my custom PAD_Addressable plugin.
-
 Visit this site to get a details explaining of Play Asset Delivery and Addressable Asset.
 
 https://killertee.wordpress.com/2021/09/04/unity-play-asset-delivery-and-addressable-assets/

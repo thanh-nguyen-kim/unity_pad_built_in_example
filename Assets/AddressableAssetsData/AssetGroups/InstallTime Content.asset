@@ -10,16 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
-  m_Name: Default Local Group
+  m_Name: InstallTime Content
   m_EditorClassIdentifier: 
-  m_GroupName: Default Local Group
+  m_GroupName: InstallTime Content
   m_Data:
     m_SerializedData: []
-  m_GUID: cc6d5f65ac05d084baf158b1c62f6e28
-  m_SerializeEntries: []
+  m_GUID: ec8f08996746ef84c9dcac7fe44bec04
+  m_SerializeEntries:
+  - m_GUID: a57375973d31f3f4894c5746ca0c90cf
+    m_Address: Assets/Scenes/Scene1.unity
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Scene1
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: b5c09aef320017846b8c82aaae72d986, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: 588877004cc7d2441b763c8789dfd3b8, type: 2}
-    - {fileID: 11400000, guid: 8466e1299cde41d488994009b15b681c, type: 2}
+    - {fileID: 11400000, guid: 36632d627bea46641a4eefc7607216a7, type: 2}
+    - {fileID: 11400000, guid: 60790962b89220c4d805b8764b7e9846, type: 2}

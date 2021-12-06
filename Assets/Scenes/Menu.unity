@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -176,6 +176,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Scene2
+  packName: CustomFastFollow
   downloadPanelPrefab: {fileID: 5058385997832691492, guid: 178a00381c2c5c8439baa845635fdf94, type: 3}
 --- !u!114 &521673168
 MonoBehaviour:
@@ -496,6 +497,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Scene1
+  packName: 
   downloadPanelPrefab: {fileID: 5058385997832691492, guid: 178a00381c2c5c8439baa845635fdf94, type: 3}
 --- !u!114 &956104052
 MonoBehaviour:
@@ -727,6 +729,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Scene3
+  packName: CustomOnDemand
   downloadPanelPrefab: {fileID: 5058385997832691492, guid: 178a00381c2c5c8439baa845635fdf94, type: 3}
 --- !u!114 &1703385062
 MonoBehaviour:

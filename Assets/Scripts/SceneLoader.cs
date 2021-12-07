@@ -13,12 +13,21 @@ public class SceneLoader : MonoBehaviour
     private IEnumerator HandleLoadAsync()
     {
         bool isCached = false;
-        var asyncTask = AndroidAssetPacks.GetAssetPackStateAsync(new string[] { packName });
-        //var asyncTask = Addressables.GetDownloadSizeAsync(sceneName);
-        // while (!asyncTask.IsDone) yield return null;
-        // isCached = (asyncTask.Status == UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationStatus.Succeeded && asyncTask.Result == 0);
-        yield return asyncTask;
-        isCached = asyncTask.states[0].status == UnityEngine.Android.AndroidAssetPackStatus.Completed;
+        yield return null;
+        if (packName != null && packName.Length > 0)
+        {
+#if UNITY_ANDROID && !UNITY_EDITOR
+            var asyncTask = AndroidAssetPacks.GetAssetPackStateAsync(new string[] { packName });
+            yield return asyncTask;
+            for (int i = 0; i < asyncTask.states.Length; i++)
+                Debug.Log(asyncTask.states[i].name + " " + asyncTask.states[i].status.ToString());
+            isCached = asyncTask.states[0].status == UnityEngine.Android.AndroidAssetPackStatus.Completed;
+#else
+            isCached = true;
+#endif
+        }
+        else
+            isCached = true;
         if (!isCached)
             downloadPanelPrefab.Spawn(sceneName, packName, LoadScene);
         else
@@ -26,10 +35,10 @@ public class SceneLoader : MonoBehaviour
     }
     public void LoadScene()
     {
-        StartCoroutine(HandleLoadAsync());
+        Addressables.LoadSceneAsync(sceneName);
     }
     public void OnClick()
     {
-        Addressables.LoadSceneAsync(sceneName);
+        StartCoroutine(HandleLoadAsync());
     }
 }
